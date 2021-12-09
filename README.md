@@ -9,8 +9,8 @@ A service-plugin needs a plugin manager that supports loading single plugin inst
 per all active Zsh sessions, in background. Zinit supports this, just add:
 
 ```
-zinit ice service'py3http'
-zinit light z-shell/zservice-py3http
+zi ice service'py3http'
+zi light z-shell/zservice-py3http
 ```
 
 to `~/.zshrc`.
