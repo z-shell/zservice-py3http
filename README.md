@@ -1,22 +1,27 @@
-# PY3HTTP
+<div align="center"><h2>
+  <a href="https://github.com/z-shell/zi">
+    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" />
+  </a>
+❮ ZI ❯ Service - Py3HTTP
+</h2></div>
 
-This Zsh service-plugin will serve given directory (plugin's directory by
-default) using Python's 3 HTTP server.
+<div align="center">
 
-## [ZI](https://github.com/z-shell/zi)
+This **Zsh** service-plugin will serve given directory _(plugin's directory by default)_ using **Python's 3 HTTP server**.
 
-A service-plugin needs a plugin manager that supports loading single plugin instance
-per all active Zsh sessions, in background. Zinit supports this, just add:
+</div>
 
-```
+## Install with ❮ [ZI](https://github.com/z-shell/zi/) ❯
+
+The service-plugin supports loading single plugin instance per all active Zsh sessions, in background.
+
+```shell title="~/.zshrc"
 zi ice service'py3http'
 zi light z-shell/zservice-py3http
 ```
 
-to `~/.zshrc`.
-
 ## Explanation of Zsh-spawned services
 
-First Zsh instance that will gain a lock will spawn the service. Other Zsh instances will
-wait. When you close the initial Zsh session, another Zsh will gain lock and resume the
-service.
+First Zsh instance that will gain a lock will spawn the service.
+
+Other Zsh instances will wait. When you close the initial Zsh session, another Zsh will gain lock and resume the service.
